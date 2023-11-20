@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI HP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!--Ini Navbar-->
+    <div class="navbar">
+        <div class="menu" onclick="toggleSidebar()">
+            <i data-feather='menu'></i>
+        </div>
+        <div class="logo">
+            <img src="Logo-kerkelpbo-rev07.png" alt="">
+        </div>
+        <div class="logout">
+            <a href="login.html">LOGOUT</a>
+        </div>
+    </div>
+    <!--Ini Sidebar-->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><h1 id="logo">SI HP</h1></li>
+            <li id="data"><a href="#">Stok Barang</a></li>
+            <li id="data"><a href="#">Data Penjualan</a></li>
+        </ul>
+    </div>
+    <!--Stok-->
+    <div class="stok" id='stok'>
+        <div class="stok-head">
+            <h2>DAFTAR STOK BARANG</h2>
+        </div>
+        <!--Tombol Input Data-->
+        <div class="input">
+            <div class="tombol">
+                <a href="input.html">Input Data</a>
+            </div>
+        </div>
+        <table id='myTable'>
+            <tr>
+                <th>No</th>
+                <th>Produk</th>
+                <th colspan=2>Stok</th>
+                <th>Harga</th>
+                <th>Hapus</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Samsung Galaxy A20</td>
+                <td>17</td>
+                <td><a href="edit.html">Edit</a></td>
+                <td>15,000,000</td>
+                <td><a href="#">Hapus</a></td>
+
+                
+            </tr>
+        </table>
+        <div class="pagination">
+            <a href="javascript:void(0);" onclick="previousPage()">Previous</a>
+            <span class="page-info" id="pageInfo">1/3</span>
+            <a href="javascript:void(0);" onclick="nextPage()">Next</a>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <!--icon-->
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>
