@@ -200,8 +200,14 @@
     margin: 1rem;
 }
 .hapus button{
-    padding: .6rem;
-    background-color: #444;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+    background-color: red;
+    cursor: pointer;
+}
+.hapus button i{
+    width: 12px;
 }
 
 
