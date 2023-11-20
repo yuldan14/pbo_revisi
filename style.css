@@ -149,29 +149,7 @@
     width: 100%;
     padding-left: 3rem;
 }
-.input{
-    display: flex;
-    justify-content: end;
-    padding-right: 3rem;
-    height: 50px;
-    border-bottom: 1px dashed black;
-    padding-bottom: 1rem;
-
-
-}
-.input .tombol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 23px;
-    box-shadow: 1px 1px 3px 1px;
-}
-.input .tombol a{
-    text-decoration: none ;
-    color: black;
-}
-table{
+#myTable{
     margin-top: 5rem;
     color: #444;
     border-collapse: collapse;
@@ -181,19 +159,22 @@ table{
     left: 10px;
 }
 
-table tr th{
+#myTable tr th{
     background: #35A9DB;
     color: #fff;
     font-weight: normal;
 }
+#myTable tr td a{
+    color: black;
+}
  
-table, th, td {
+#myTable, th, td {
     padding: 8px 50px;
     text-align: center;
 }
  
  
-table tr:nth-child(even) {
+#myTable tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 .on{
@@ -212,6 +193,15 @@ table tr:nth-child(even) {
     padding: 5px 10px;
     border: 1px solid #dddddd;
     cursor: pointer;
+}
+
+.hapus{
+    display: flex;
+    margin: 1rem;
+}
+.hapus button{
+    padding: .6rem;
+    background-color: #444;
 }
 
 
@@ -238,3 +228,27 @@ table tr:nth-child(even) {
     color: black;
 }
 
+
+/*Form edit dan input*/
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.content form table input{
+    border-radius: 23px;
+    padding: .5rem;
+}
+.content form .simpan{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.content form .simpan a{
+    background-color: var(--main);
+    padding: 1rem;
+    border-radius: 23px;
+    color: black;
+    text-decoration: none;
+}

@@ -41,3 +41,26 @@ var currentPage = 1;
     }
 
     showPage(currentPage);
+
+
+    var checkboxes = document.querySelectorAll('.hapus-checkbox');
+    function confirmDelete() {
+        var selectedRows = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+        
+        if (selectedRows.length > 0) {
+            var confirmation = confirm("Apakah Anda yakin ingin menghapus baris terpilih?");
+            
+            if (confirmation) {
+                selectedRows.forEach(checkbox => {
+                    var row = checkbox.closest('tr');
+                    row.remove();
+                });
+
+                // Kembali ke halaman pertama setelah menghapus
+                currentPage = 1;
+                showPage(currentPage);
+            }
+        } else {
+            alert("Tidak ada baris yang terpilih.");
+        }
+    }
