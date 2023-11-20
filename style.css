@@ -160,7 +160,7 @@
 }
 
 #myTable tr th{
-    background: #35A9DB;
+    background: var(--main);
     color: #fff;
     font-weight: normal;
 }
